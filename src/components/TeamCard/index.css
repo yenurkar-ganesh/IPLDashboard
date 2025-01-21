@@ -1,0 +1,15 @@
+.matchCard {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  border-radius: 14px;
+  padding: 18px;
+}
+.teamLogo {
+  width: 120px;
+  height: 120px;
+}

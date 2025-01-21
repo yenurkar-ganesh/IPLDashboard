@@ -1,0 +1,23 @@
+.team-logo {
+  width: 90%;
+  border-radius: 14px;
+}
+.latest-matches-section {
+  background-color: #0f172a;
+  padding: 10px 14px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  gap: 18px;
+}
+.opponent-logo {
+  width: 210px;
+}
+.match-sections{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}

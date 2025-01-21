@@ -1,11 +1,32 @@
-.card {
+.match-card {
   list-style: none;
-  background-color: #0f172a;
   border-radius: 14px;
-  padding: 18px;
-  width: 140px;
+  width: 290px;
+  color: black;
+  text-align: center;
 }
-.logo {
-  width: 100%;
+.competing-team-logo {
+  width: 60%;
   height: 140px;
+}
+.competing-team {
+  font-size: 21px;
+  font-weight: 700;
+  font-family: 'Termina Test', sans-serif;
+  margin: 15px 0px;
+}
+.match-result {
+  margin: 15px 0px;
+  font-weight: 700;
+}
+.match-won,
+.match-lost {
+  font-weight: 700;
+  font-size: 18px;
+}
+.match-won {
+  color: #17b169;
+}
+.match-lost {
+  color: #e32636;
 }

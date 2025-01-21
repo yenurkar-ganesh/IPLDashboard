@@ -25,35 +25,41 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="home-container">
-      <div className="app-header">
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png"
-          alt="ipl logo"
-          className="ipl-logo"
-        />
-        <h1 className="app-title">IPL Dashboard</h1>
-      </div>
-      {isLoading ? (
-        <div data-testid="loader">
-          <Loader type="Oval" color="#ffffff" height={50} width={50} />
+    <div className=" home-container">
+      <div className="container-row d-flex flex-column">
+        <div className="app-header">
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png"
+            alt="ipl logo"
+            className="ipl-logo"
+          />
+          <h1 className="app-title">IPL Dashboard</h1>
         </div>
-      ) : (
-        <ul className="teams-list">
-          {teams.map(team => (
-            <li key={team.id} className="team-card">
-              <Link to={`/team-matches/${team.id}`} className="team-link">
-                <img
-                  src={team.teamImageUrl}
-                  alt={`team ${team.name}`}
-                  className="team-image"
-                />
-                <p className="team-name">{team.name}</p>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+        {isLoading ? (
+          <div data-testid="loader">
+            <Loader type="Oval" color="#ffffff" height={50} width={50} />
+          </div>
+        ) : (
+          <ul className="teams-list-section ">
+            {teams.map(team => (
+              <li
+                key={team.id}
+                className="bg-light p-3 shadow rounded-lg text-black team-card"
+              >
+                <Link to={`/team-matches/${team.id}`} className="team-link">
+                  <img
+                    src={team.teamImageUrl}
+                    alt={`team ${team.name}`}
+                    className="team-image"
+                  />
+                  <p className="line"></p>
+                  <p className="team-name">{team.name}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   )
 }

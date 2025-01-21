@@ -1,5 +1,12 @@
-.team-logo {
-  width: 90%;
+.team-matches-container {
+  background-color: #0f172a;
+  color: aliceblue;
+  font-family: 'Termina Test', sans-serif;
+}
+
+.team-banner {
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
   border-radius: 14px;
 }
 .latest-matches-section {
@@ -15,9 +22,32 @@
 .opponent-logo {
   width: 210px;
 }
-.match-sections{
+.match-sections {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 14px;
+}
+.latest-match-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.compite-team {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 12px 0px;
+}
+.compite-date {
+  font-size: 21px;
+  font-weight: 400;
+  margin: 6px 0px;
+}
+.recent-matches-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 3rem;
 }
